@@ -1,0 +1,220 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f8fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+.header {
+  background: #1c3d6c;
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.logo-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.logo-titulo img {
+  width: 80px;
+}
+
+nav {
+  background-color: #36537c;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.activo {
+  color: #ffc107;
+  border-bottom: 2px solid #ffc107;
+}
+
+main.contenido {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* SERVICIOS */
+.servicios-generales {
+  background-color: #e8f0fa;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.servicio-card {
+  background: #fff;
+  border: 2px solid #cfd8dc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.servicio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.servicio-icono {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #0d47a1;
+}
+
+.servicio-card h3 {
+  color: #0d47a1;
+  margin-bottom: 1rem;
+}
+
+.servicio-card ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+  color: #333;
+}
+
+.servicio-card li {
+  margin-bottom: 0.8rem;
+  text-align: justify;
+}
+
+
+footer {
+  background-color: #1c3d6c;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+
+
+/*Card Servicios*/
+.servicios-card {
+  background-color: #e8f0fa;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 1100px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.servicios-card .card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card-texto {
+  flex: 1;
+  min-width: 280px;
+}
+
+.card-texto h2 {
+  font-size: 2rem;
+  color: #1c3d6c;
+  margin-bottom: 1rem;
+}
+
+.card-texto p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.card-imagen {
+  flex: 1;
+  min-width: 280px;
+}
+
+.card-imagen img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card-imagen img:hover {
+  transform: scale(1.03);
+}
+
+
+/*linea divide*/
+.divider-azul-amarillo {
+  border: 0;
+  height: 5px;
+  width: 80%;
+  margin: 3rem auto;
+  border-radius: 3px;
+  background-image: linear-gradient(to right, #0d47a1, #2196f3, #fbc02d, #0d47a1);
+}
+
+
+/*contacto*/
+.contacto-card {
+  background-color: #f0f4f9;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 3rem auto;
+  max-width: 700px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card-contacto h2 {
+  color: #1c3d6c;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.info-contacto p {
+  font-size: 1.1rem;
+  margin: 0.8rem 0;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.info-contacto .icono {
+  font-size: 1.3rem;
+  color: #0d47a1;
+}

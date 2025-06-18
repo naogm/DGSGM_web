@@ -1,0 +1,416 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f8fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+.header {
+  background: #1c3d6c;
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.logo-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.logo-titulo img {
+  width: 80px;
+}
+
+nav {
+  background-color: #36537c;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.activo {
+  color: #ffc107;
+  border-bottom: 2px solid #ffc107;
+}
+
+main.contenido {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  background-color: #e3f2fd;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.intro .text, .intro .image {
+  flex: 1;
+  min-width: 280px;
+}
+
+.intro img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.intro h2 {
+  font-size: 2rem;
+  color: #1c3d6c;
+  margin-bottom: 1rem;
+}
+
+/* Divider con degradado azul-gris */
+.divider {
+  border: 0;
+  height: 5px;
+  background-image: linear-gradient(to right, #1c3d6c, #b0bec5, #1c3d6c);
+  margin: 40px auto;
+  width: 80%;
+  border-radius: 2px;
+}
+
+/* Secciones */
+section {
+  margin-bottom: 3rem;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #1c3d6c;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #b0bec5;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+section p, section ul {
+  font-size: 1rem;
+  color: #333;
+}
+
+section ul {
+  list-style: disc;
+  margin-left: 2rem;
+}
+
+/* Enlaces */
+a {
+  color: #1c3d6c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Footer */
+footer {
+  background-color: #003c8f;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+footer a {
+  color: #4dd0e1;
+}
+
+
+/*requisitos*/
+.requisitos-alumno {
+  background-color: #f5faff;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+}
+
+.requisitos-alumno h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #1c3d6c;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.columnas-requisitos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.columna {
+  flex: 1;
+  min-width: 280px;
+}
+
+.tarjeta {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta ul {
+  padding-left: 1.5rem;
+}
+
+.tarjeta li,
+.tarjeta p {
+  text-align: justify;
+  color: #333;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.negrita {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.icono {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.icono img {
+  width: 60px;
+  height: auto;
+}
+
+
+
+/*formulario*/
+.formato-retiro {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+.formato-contenido p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.btn-formulario {
+  display: inline-block;
+  background-color: #1c3d6c;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-formulario:hover {
+  background-color: #0d47a1;
+}
+
+
+
+/*requisitos si alumno no*/
+.requisitos-alumno {
+  background-color: #f9fbfd; /* fondo claro */
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.titulo-centrado {
+  margin-bottom: 1.5rem;
+  color: #1c3d6c;
+}
+
+.columnas-requisitos {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.columna {
+  flex: 1 1 300px;
+  text-align: left;
+}
+
+.columna ul {
+  list-style: disc inside;
+  color: #333;
+  font-size: 1rem;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Fondo claro para la sección */
+.fondo-claro {
+  background-color: #f9fbfd; /* tono suave y claro */
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+/* Título centrado */
+.titulo-centrado {
+  text-align: center;
+  color: #1c3d6c;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Para que el texto de los párrafos dentro de la sección esté en negritas */
+.negrita {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Contenedor de columnas */
+.columnas-requisitos {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Cada columna */
+.columna {
+  flex: 1 1 300px; /* crece, se encoge, base 300px */
+  background-color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Listas */
+.columna ul {
+  list-style: disc inside;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .columnas-requisitos {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .columna {
+    flex: 1 1 100%;
+    padding: 1rem;
+  }
+}
+
+
+/*tramite cch enp*/
+
+.tramites {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.tramites-imagenes {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+.tramites-imagenes a img {
+  width: 150px; /* Ajusta tamaño de las imágenes */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.tramites-imagenes a img:hover {
+  transform: scale(1.1);
+}
+
+
+/*contacto*/
+.contacto {
+  max-width: 600px;
+  margin: 0 auto 4rem auto;
+  padding: 2rem;
+  background-color: #e9f0fb; /* Fondo suave azul claro */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(13, 71, 161, 0.15);
+  text-align: center;
+  font-size: 1.1rem;
+  color: #0d47a1; /* Azul oscuro */
+  line-height: 1.6;
+}
+
+.contacto h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #0b3a8c;
+  font-weight: 700;
+  border-bottom: 3px solid #0d47a1;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.contacto p {
+  margin-bottom: 1rem;
+}
+
+.contacto strong {
+  color: #0b3a8c;
+}
+
+.contacto a {
+  color: #0d47a1;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.contacto a:hover {
+  color: #ffc107; /* Amarillo para hover */
+  text-decoration: underline;
+}

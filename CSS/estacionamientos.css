@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+.est-header {
+  background: #094293;
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.logo-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.logo-titulo img {
+  width: 80px;
+  height: auto;
+}
+
+nav {
+  background-color: #3e78ff ;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #aed581;
+  border-bottom: 2px solid #aed581;
+}
+
+main.contenido {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  background: #f9f3e5;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.intro .text, .intro .image {
+  flex: 1;
+  min-width: 280px;
+}
+
+.intro img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.intro h2 {
+  color: #b29849;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.divider {
+  border: 0;
+  height: 4px;
+  background-image: linear-gradient(to right, #0d47a1, #1976d2, #64b5f6, #fdd835, #efb810); /* Azul oscuro → azul medio → dorado */
+  margin: 40px auto;
+  width: 80%;
+  border-radius: 2px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-left: 6px solid #1976e2;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  color: #ceb460;
+  margin-bottom: 1rem;
+}
+
+.mapa-estacionamientos {
+  background: #e6ecff;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.mapa-estacionamientos h2 {
+  font-size: 1.8rem;
+  color: #ceb460;
+  margin-bottom: 1rem;
+}
+
+.mapa-contenedor img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contacto {
+  background: #c2b693;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.contacto h2 {
+  color: #000000;
+  font-size: 1.6rem;
+}
+
+footer {
+  background: #094293;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+footer a {
+  color: #9a7d0a;
+}
+
+
+
+/*animacion info-grid*/
+/* Animación fadeSlideIn */
+
+@keyframes zoomInFade {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Aplica animación a cada tarjeta individualmente */
+.info-grid .card {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: zoomInFade 0.6s ease forwards;
+}
+
+/* Animación escalonada */
+.info-grid .card:nth-child(1) { animation-delay: 0.2s; }
+.info-grid .card:nth-child(2) { animation-delay: 0.4s; }
+.info-grid .card:nth-child(3) { animation-delay: 0.6s; }
+.info-grid .card:nth-child(4) { animation-delay: 0.8s; }
+/* Agrega más delays si tienes más tarjetas */
+
+
+.info-grid .card {
+  animation-play-state: paused;
+}
+
+
+/*boton info*/
+
+.guia-estacionamientos {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  margin: 3rem auto;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 800px;
+}
+
+.guia-estacionamientos h2 {
+  color: #1565c0;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.guia-estacionamientos p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.btn-guia {
+  display: inline-block;
+  background-color: #1565c0;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-guia:hover {
+  background-color: #0d47a1;
+}
+
+
+/*imagen info*/
+
+.otros-estacionamientos {
+  text-align: center;
+  background-color: #f0f4f8;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 3rem auto;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.otros-estacionamientos h2 {
+  font-size: 1.8rem;
+  color: #1565c0;
+  margin-bottom: 1.5rem;
+}
+
+.imagen-con-pie img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pie-imagen {
+  margin-top: 0.8rem;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #666;
+}

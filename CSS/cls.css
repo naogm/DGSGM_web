@@ -1,0 +1,193 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color:  #d35400 ;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 180px;
+  margin-bottom: 1rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+/* SECCIÓN INTRO */
+.intro {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.intro h2 {
+  color: #1c3d6c;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* GALERÍA */
+.galeria {
+  margin-top: 3rem;
+}
+
+.galeria h2 {
+  text-align: center;
+  color: #1c3d6c;
+  margin-bottom: 2rem;
+}
+
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.foto {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.foto img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.foto p {
+  margin-top: 0.8rem;
+  color: #555;
+}
+
+/* LIGHTBOX */
+.lightbox {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  z-index: 1000;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #1c3d6c;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+}
+
+footer a {
+  color: #f4a261;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+/* ====== HEADER Y NAVEGACIÓN ====== */
+
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+
+header nav ul li a:hover {
+    background-color: #143055;
+    border-radius: 4px;
+}
+
+
+/* ====== MENÚ DE NAVEGACIÓN ====== */
+nav {
+  background-color: #1c3d6c; /* Color de fondo de la barra */
+  padding: 1rem 0; /* Espaciado vertical */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center; /* Centra los enlaces */
+  gap: 2rem; /* Espacio entre los enlaces */
+  list-style: none; /* Elimina los puntos de la lista */
+}
+
+nav ul li a {
+  color: white; /* Color de texto */
+  font-size: 1.1rem;
+  text-decoration: none; /* Elimina el subrayado */
+  font-weight: bold;
+  transition: color 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+nav ul li a:hover {
+  color: #f4a261; /* Color al pasar el mouse */
+}
+
+/* Estilo para la barra de navegación en dispositivos pequeños */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Menú vertical en pantallas pequeñas */
+    align-items: center; /* Centra los enlaces verticalmente */
+  }
+  
+  nav ul li a {
+    padding: 0.5rem 0; /* Espaciado vertical entre enlaces */
+  }
+}

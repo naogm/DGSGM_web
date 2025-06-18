@@ -1,0 +1,20 @@
+/* Nueva paleta de colores */
+:root {
+    --azul-claro-1: #49a4bf;
+    --azul-claro-2: #bad5df;
+    --azul-claro-3: #2497b6;
+    --azul-claro-4: #349cba;
+    --azul-claro-5: #2E88C3;
+
+    --azul-marino-1: #002E6C;
+    --azul-marino-2: #1d2a4f;
+    --azul-marino-3: #3a3947;
+    --azul-marino-4: #28404e;
+    --azul-marino-5: #001b58;
+    --azul-marino-6: #58C9E7;
+
+    --amarillo-dorado-1: #e0a823;
+    --amarillo-dorado-2: #f5a015;
+    --amarillo-dorado-3: #68655f;
+    --amarillo-dorado-4: #B88402;
+}

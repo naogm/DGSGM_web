@@ -1,0 +1,196 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #005F8D;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+/* Introducción */
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  color: #005F8D;
+  margin-bottom: 0.5rem;
+}
+
+/* Tarjetas */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  background-color: #f0f8ff; /* AliceBlue */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  color: #005F8D;
+  margin-bottom: 1rem;
+}
+
+.card ul {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+  color: #444;
+}
+
+.card ul li {
+  margin-bottom: 0.5rem;
+}
+
+.intro p,
+.card p {
+  text-align: justify;
+}
+
+
+/* Mapa */
+.mapa h2 {
+  text-align: center;
+  color: #005F8D;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.mapa-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+footer {
+  background-color: #005F8D;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
+/* ====== HEADER Y NAVEGACIÓN ====== */
+header {
+    background-color: #1c3d6c;
+    padding: 1rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+
+header nav ul li a:hover {
+    background-color: #143055;
+    border-radius: 4px;
+}
+
+
+/* ====== MENÚ DE NAVEGACIÓN ====== */
+nav {
+  background-color: #1c3d6c; /* Color de fondo de la barra */
+  padding: 1rem 0; /* Espaciado vertical */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center; /* Centra los enlaces */
+  gap: 2rem; /* Espacio entre los enlaces */
+  list-style: none; /* Elimina los puntos de la lista */
+}
+
+nav ul li a {
+  color: white; /* Color de texto */
+  font-size: 1.1rem;
+  text-decoration: none; /* Elimina el subrayado */
+  font-weight: bold;
+  transition: color 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+nav ul li a:hover {
+  color: #f4a261; /* Color al pasar el mouse */
+}
+
+/* Estilo para la barra de navegación en dispositivos pequeños */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Menú vertical en pantallas pequeñas */
+    align-items: center; /* Centra los enlaces verticalmente */
+  }
+  
+  nav ul li a {
+    padding: 0.5rem 0; /* Espaciado vertical entre enlaces */
+  }
+}

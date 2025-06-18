@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Programa Pumabús | DGSGM UNAM</title>
+  <link rel="stylesheet" href="css/pumabus.css" />
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="pumabus-header">
+    <div class="logo-titulo">
+      <img src="img/dgsgm_logo.png" alt="Logotipo de la DGSGM UNAM">
+      <h1>Programa Pumabús</h1>
+    </div>
+  </header>
+
+  <!-- Navegación -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="directorio.html">Directorio</a></li>
+      <li><a href="conocenos.html">Conócenos</a></li>
+      <li><a href="prevencion.html">Prevención de Riesgos</a></li>
+      <li><a href="eventos.html" class="activo">Eventos</a></li>
+    </ul>
+  </nav>
+
+  <main class="contenido">
+
+    <!-- Introducción -->
+    <section class="intro">
+      <div class="text">
+        <h2>¿Qué es Pumabús?</h2>
+        <p>
+          Pumabús es un sistema de transporte gratuito para facilitar el traslado de estudiantes, académicos y trabajadores dentro de Ciudad Universitaria. Brinda un servicio eficiente, seguro y sustentable a través de múltiples rutas.
+        </p>
+      </div>
+      <div class="image">
+        <img src="img/pumabus/puma_4.jpg" alt="Unidad del Pumabús">
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Información -->
+    <section class="info-grid">
+      <div class="card">
+        <h3>¿Quiénes pueden usarlo?</h3>
+        <p>Toda la comunidad universitaria con credencial vigente.</p>
+      </div>
+      <div class="card">
+        <h3>Rutas</h3>
+        <p>Cuenta con 13 rutas principales señalizadas por colores, cubriendo puntos estratégicos del campus.</p>
+      </div>
+      <div class="card">
+        <h3>Horario</h3>
+        <p>Lunes a viernes de 06:00 a 22:00 horas.</p>
+      </div>
+
+    </section>
+
+
+
+<hr class="divider" />
+
+<!-- Medidas de Autocuidado -->
+<section class="autocuidado">
+  <h2>Medidas de Autocuidado en el Pumabús</h2>
+  <p>Recuerda seguir estas recomendaciones para tu seguridad y bienestar al utilizar el servicio.</p>
+  <div class="gif-container">
+    <img src="img/pumabus/medidas.gif" alt="Medidas de autocuidado en el Pumabús">
+  </div>
+</section>
+
+
+
+
+<hr class="divider" />
+
+
+
+ <!-- mapa -->
+<section class="mapa-pumabus">
+  <h2>Mapa completo de las 13 rutas</h2>
+  <p>Consulta el recorrido y conexiones entre las rutas del Pumabús en Ciudad Universitaria:</p>
+  <div class="mapa-contenedor">
+    <img src="img/pumabus/ruta.jpg" alt="Mapa de rutas Pumabús UNAM">
+  </div>
+</section>
+
+
+
+<hr class="divider" />
+
+
+<!-- Sección de las 13 rutas -->
+<section class="rutas-pumabus">
+  <h2>Conoce las 13 Rutas de Pumabús</h2>
+  <p>Haz clic en el punto de color para ver el mapa de cada ruta.</p>
+  
+  <div class="rutas-container">
+    <div class="ruta" data-ruta="ruta1" style="background-color: #9ccc65;">Ruta 1</div>
+    <div class="ruta" data-ruta="ruta2" style="background-color: #fdd835;">Ruta 2</div>
+    <div class="ruta" data-ruta="ruta3" style="background-color: #006600;">Ruta 3</div>
+    <div class="ruta" data-ruta="ruta4" style="background-color: #6d4c41;">Ruta 4</div>
+    <div class="ruta" data-ruta="ruta5" style="background-color: #3498db;">Ruta 5</div>
+    <div class="ruta" data-ruta="ruta6" style="background-color: #a93226;">Ruta 6</div>
+    <div class="ruta" data-ruta="ruta7" style="background-color: #9a7d0a;">Ruta 7</div>
+    <div class="ruta" data-ruta="ruta8" style="background-color: #1a237e;">Ruta 8</div>
+    <div class="ruta" data-ruta="ruta9" style="background-color: #CC0099;">Ruta 9</div>
+    <div class="ruta" data-ruta="ruta10" style="background-color: #000000;">Ruta 10</div>
+    <div class="ruta" data-ruta="ruta11" style="background-color: #5e35b1;">Ruta 11</div>
+    <div class="ruta" data-ruta="ruta12" style="background-color: #b39ddb;">Ruta 12</div>
+    <div class="ruta" data-ruta="ruta13" style="background-color: #b2ebf2;">Ruta 13</div>
+  </div>
+  
+  <!-- Contenedor para mostrar el mapa de cada ruta -->
+  <div id="mapa-ruta" class="mapa-ruta">
+    <img id="mapa-imagen" src="" alt="Mapa de la Ruta" />
+  </div>
+</section>
+
+
+
+
+
+<hr class="divider" />
+
+<!-- Botón sección apoyo -->
+<section class="apoyo-pumabus">
+  <h2>Solicita el Servicio de Apoyo de Transporte Pumabús</h2>
+  <p>
+    Este servicio está disponible para personas con discapacidad o necesidades especiales dentro de Ciudad Universitaria.
+  </p>
+  <!-- Botón que abre el formulario en una nueva pestaña -->
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScP7vOkjkhSx0GEB55wYCzMv390C4FvD_xpuhMmZivsp2SQgw/viewform?pli=1" 
+     target="_blank" class="btn-apoyo">Ir al Formulario</a>
+</section>
+
+
+
+
+
+<hr class="divider" />
+
+
+
+    <!-- Galería -->
+    <section class="galeria">
+      <h2>Galería Pumabús</h2>
+      <div class="slider-container">
+        <button class="slider-btn prev">&#10094;</button>
+        <div class="slider">
+          <div class="slide active"><img src="img/pumabus/pumabus2.jpg" alt="Pumabús 2"></div>
+          <div class="slide"><img src="img/pumabus/pumabus3.jpg" alt="Pumabús 3"></div>
+          <div class="slide"><img src="img/pumabus/pumabus4.jpg" alt="Pumabús 4"></div>
+        </div>
+        <button class="slider-btn next">&#10095;</button>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Contacto -->
+    <section class="contacto">
+      <h2>Contacto</h2>
+      <p><strong>Teléfono:</strong> 55 5622 6182</p>
+      <p><strong>Email:</strong> <a href="mailto:pumabus@dgsgm.unam.mx">pumabus@dgsgm.unam.mx</a></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      Hecho en México, Universidad Nacional Autónoma de México (UNAM), todos los derechos reservados 2025.
+    </p>
+    <p><a href="https://www.dgsgm.unam.mx/">www.dgsgm.unam.mx</a></p>
+  </footer>
+
+  <script src="js/pumabus.js"></script>
+</body>
+</html>

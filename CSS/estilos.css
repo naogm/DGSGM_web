@@ -1,0 +1,769 @@
+/* ====== RESET ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ====== GENERAL ====== */
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* ====== HEADER Y NAVEGACIÓN ====== */
+header {
+    background-color: #1c3d6c;
+    padding: 1rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+
+header nav ul li a:hover {
+    background-color: #143055;
+    border-radius: 4px;
+}
+
+
+/* ====== MENÚ DE NAVEGACIÓN ====== */
+nav {
+  background-color: #1c3d6c; /* Color de fondo de la barra */
+  padding: 1rem 0; /* Espaciado vertical */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center; /* Centra los enlaces */
+  gap: 2rem; /* Espacio entre los enlaces */
+  list-style: none; /* Elimina los puntos de la lista */
+}
+
+nav ul li a {
+  color: white; /* Color de texto */
+  font-size: 1.1rem;
+  text-decoration: none; /* Elimina el subrayado */
+  font-weight: bold;
+  transition: color 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+nav ul li a:hover {
+  color: #f4a261; /* Color al pasar el mouse */
+}
+
+/* Estilo para la barra de navegación en dispositivos pequeños */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Menú vertical en pantallas pequeñas */
+    align-items: center; /* Centra los enlaces verticalmente */
+  }
+  
+  nav ul li a {
+    padding: 0.5rem 0; /* Espaciado vertical entre enlaces */
+  }
+}
+
+
+
+
+
+/* ====== CARRUSEL PRINCIPAL ====== */
+#carousel {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 500px; /* Ajuste de altura */
+  margin-bottom: 2rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+#carousel .carousel-container {
+  width: 90%; /* Reduce el ancho visible del carrusel */
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#carousel .carousel-slide {
+  display: flex;
+  height: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+#carousel .carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 12px;
+}
+
+/* BOTONES DEL CARRUSEL */
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+button.prev:hover,
+button.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+button.prev {
+  left: 15px;
+}
+
+button.next {
+  right: 15px;
+}
+
+
+
+
+
+
+/* ====== CARRUSEL MÁS GRANDE (NUEVO CARRUSEL) ====== */
+/* ====== CARRUSEL PRINCIPAL ====== */
+#carousel {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 500px; /* Ajuste de altura */
+  margin-bottom: 2rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+#carousel .carousel-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#carousel .carousel-slide {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+#carousel .carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 12px;
+}
+
+
+
+
+
+/* ====== NUEVO CARRUSEL ====== */
+#nuevo-carrusel {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+  margin: 3rem auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+}
+
+#nuevo-carrusel .carousel-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+}
+
+#nuevo-carrusel .carousel-slide {
+  min-width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#nuevo-carrusel .carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Estilo de los botones de navegación */
+#nuevo-carrusel button.prev,
+#nuevo-carrusel button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+#nuevo-carrusel button.prev:hover,
+#nuevo-carrusel button.next:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#nuevo-carrusel button.prev {
+  left: 15px;
+}
+
+#nuevo-carrusel button.next {
+  right: 15px;
+}
+
+/* Responsividad - Ajuste de botones en móviles */
+@media (max-width: 768px) {
+  #nuevo-carrusel button.prev,
+  #nuevo-carrusel button.next {
+    font-size: 1.8rem;
+    padding: 8px;
+  }
+
+  #nuevo-carrusel {
+    height: 350px; /* Reducir la altura en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  #nuevo-carrusel button.prev,
+  #nuevo-carrusel button.next {
+    font-size: 1.5rem;
+    padding: 6px;
+  }
+
+  #nuevo-carrusel {
+    height: 300px; /* Ajustar altura para dispositivos más pequeños */
+  }
+}
+
+/* Estilo de los indicadores de carrusel (si los decides agregar) */
+#nuevo-carrusel .carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+}
+
+#nuevo-carrusel .carousel-indicators button {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#nuevo-carrusel .carousel-indicators button.active {
+  background-color: #1c3d6c;
+}
+
+/* Estilo para las imágenes del carrusel, asegurando que no se distorsionen */
+#nuevo-carrusel .carousel-slide img {
+  object-fit: cover; /* Asegura que las imágenes se ajusten bien */
+  border-radius: 12px;
+}
+
+
+
+
+
+
+
+
+/* ====== HEADER INSTITUCIONAL ====== */
+.main-header {
+  background-color: #ffffff;
+  padding: 1rem 0;
+  border-bottom: 2px solid #1c3d6c;
+}
+
+.header-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* Espacio entre logos */
+  flex-wrap: wrap; /* Permite que los logos bajen en dispositivos pequeños */
+}
+
+.header-logos .logo {
+  max-height: 70px;
+  width: auto;
+  transition: transform 0.2s ease;
+}
+
+.header-logos .logo:hover {
+  transform: scale(1.05);
+}
+
+/* ====== CONTENIDO ====== */
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: white;
+    background-color: #005F8D;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+
+h3 {
+  font-size: 1.5rem;        /* Tamaño más grande */
+  font-weight: bold;        /* Negritas */
+  color: #005F8D;           /* Azul UNAM */
+  margin-bottom: 0.5rem;    /* Espaciado debajo del título */
+  text-align: center;       /* Opcional: centra el texto si lo deseas */
+}
+
+
+
+
+
+.container {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.main__tittle2 {
+    color: #005F8D;
+    font-size: 2.2rem; /* Aumentado desde 1.8rem */
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.main__cnt2 {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* ====== CARDS ====== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.card {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px 6px 0 0;
+  margin-bottom: 0.8rem;
+}
+
+.card:hover {
+  background-color: #e0ecf9;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive - Tablets: 2 columnas */
+@media (max-width: 992px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive - Móviles: 1 columna */
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* Permite que la tarjeta <a> conserve su diseño */
+.cards a.card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.cards a.card:hover {
+  background-color: #e0ecf9;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+/* ====== FOOTER ====== */
+footer {
+    background-color: #1c3d6c;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  button.prev,
+  button.next {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button.prev,
+  button.next {
+    font-size: 1.2rem;
+    padding: 6px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+}
+
+
+/* ====== COMISIONES ====== */
+#comisiones {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.comisiones-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Usamos auto-fit para que las tarjetas se ajusten al tamaño disponible */
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.comision-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    border-left: 6px solid #005F8D; /* valor por defecto (azul UNAM) */
+}
+
+.comision-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.8
+    rem;
+}
+
+.comision-card p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.comision-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Estilos personalizados por tarjeta */
+.comision-card.morado {
+    border-left-color: #6a1b9a; /* morado fuerte */
+}
+
+.comision-card.morado h3 {
+    color: #6a1b9a;
+}
+
+.comision-card.naranja {
+    border-left-color: #f57c00; /* naranja fuerte */
+}
+
+.comision-card.naranja h3 {
+    color: #f57c00;
+}
+/* Estilo para los enlaces que envuelven las tarjetas */
+.comisiones-cards a.comision-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+
+
+/* ====== Línea divisoria con degradado ====== */
+.divider {
+  border: none;
+  height: 4px;
+  width: 60%;
+  margin: 2rem auto;
+  border-radius: 2px;
+  background: linear-gradient(to right, #6a1b9a, #1c3d6c, #f4a261); /* Morado → Azul UNAM → Naranja */
+}
+
+
+
+
+
+
+/* Estilos para la sección de Archivos PDF */
+.pdf-cards-elegante {
+  padding: 3rem 1rem;
+  background-color: #f5faff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.pdf-cards-elegante .titulo-centrado {
+  text-align: center;
+  font-size: 2rem;
+  color: #fdfefe;
+  margin-bottom: 1rem;
+}
+
+.pdf-cards-elegante .descripcion {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+.cards-pdf-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.card-pdf {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.3s ease;
+}
+
+.card-pdf:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.pdf-info h3 {
+  color: #0d47a1;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.pdf-fecha {
+  font-size: 0.9rem;
+  color: #757575;
+  margin-bottom: 1rem;
+}
+
+.btn-ver {
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  background-color: #1c3d6c;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-ver:hover {
+  background-color: #0d47a1;
+}
+
+
+
+
+
+/* ====== SECCIÓN CONTACTO ====== */
+#contacto {
+  padding: 3rem 1rem;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+#contacto h2 {
+  text-align: center;
+  color: #fbfcfc ;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.contacto-tarjeta {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contacto-item {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.contacto-item img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.contacto-item p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.contacto-item a {
+  color: #1c3d6c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contacto-item a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo para Redes Sociales sin ícono principal */
+.contacto-item.redes {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.contacto-item.redes p {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: bold;
+  color: #1c3d6c;
+}
+
+/* Íconos de redes sociales más grandes */
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-links a img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover img {
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contacto-tarjeta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacto-item {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+}
+
+
+
+
+
+
